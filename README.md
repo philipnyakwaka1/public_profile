@@ -1,1 +1,1 @@
-# public_profile
+This repository is intended to highlight my personal portfolio projects
