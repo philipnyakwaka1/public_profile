@@ -1,0 +1,143 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Porfolio</title>
+        <link rel="stylesheet" href="{% static 'myPortfolio/css/main.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+    <body style="background-image: url({% static 'myPortfolio/images/background.jpg' %});">
+        <div class="main">
+            
+            <div class="navy-blue">
+                <div class="header">
+                    <div class="title"><p>Philip Nyakwaka - BackEnd Engineer & GIS Developer</p></div>
+                    <div class="contact_me">
+                        <a href="mailto:philipnyakwaka24@gmail.com"><i class="fas fa-envelope h-e"> philipnyakwaka24@gmail.com</i></a>
+                        <a href="tel:+123456789"><i class="fas fa-phone h-p"> +254727620048</i></a>
+                    </div>
+                </div>
+                <div class="introduction">
+                    <div class="intro">
+                        <div class="main_intro">
+                            <p class="intro_p"><strong style="font-size: 40px; color: black;">Hi, I'm Philip </strong>- I design and build amazing things, and I love what I do.</p>
+                        </div>
+                        <div class="image">
+                            <img class="profile-image" src="{% static 'myPortfolio/images/normal.jpg' %}" alt="image">
+                        </div>
+                        <div class="bio">
+                            <p style="line-height: 25px; font-weight: 500; font-size: 20px;">An engineer and software engineer with a passion for crafting digital solutions, I thrive on tackling complex challenges.  Freelance work has allowed me to collaborate with talented individuals on academic, startup, and established business projects, all focused on building innovative digital tools. This experience fuels my constant curiosity and desire to learn.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="recent-work">
+                <div class="text">
+                    <h1>Recent Work</h1>
+                    <p class="my_p">Explore some of my latest projects. Want to find out more? <a href="#">Email</a> me</p>
+                </div>
+                <div class="projects-container">
+                    <div class="projects-items">
+                        <div class="project-description">
+                            <p class="project_p">This ArcGIS-powered solution streamlines processes and eliminates manual tasks for a faster, more efficient experience.  Elevate your building inspections with digital asset mapping, putting critical building data at your fingertips.</p>
+                            <p class="project_p"><a class="project_a" href="https://gspace.maps.arcgis.com/apps/dashboards/f6656e49233742d68626e6a8f0d19683">Learn More</a></p>
+                        </div>
+                        <h3>Public Asset Inspection Workflows with ArcGIS</h3>
+                        <img class="project-img" src="{% static 'myPortfolio/images/buildings.PNG' %}" alt="">
+                    </div>
+                    <div class="projects-items">
+                        <div class="project-description">
+                            <p class="project_p">This web application intendes to serve as an online platform for facilitating connections between pet sellers and buyers. The technology stack employed includes Python, JavaScript, Bootstrap, HTML, and CSS and Django.</p>
+                            <p class="project_p"><a class="project_a" href="https://github.com/philipnyakwaka1/PET_HAVEN_DEV">Learn More</a></p>
+                        </div>
+                        <h3>Pet Fast - Online Pet Shop</h3>
+                        <img class="project-img" src="{% static 'myPortfolio/images/pets.PNG' %}" alt="">
+                    </div>
+                    <div class="projects-items">
+                        <div class="project-description">
+                            <p class="project_p">This collaborative project mirrors Airbnb and is built using the Flask web development framework. It follows a REST API architectural style.</p>
+                            <p class="project_p"><a class="project_a" href="https://github.com/philipnyakwaka1/AirBnB_clone">Learn More</a></p>
+                        </div>
+                        <h3>AirBnB Clone</h3>
+                        <img class="project-img" src="{% static 'myPortfolio/images/hbnb.PNG' %}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="languages">
+                <h1 style="color: white;">My Tech Stack</h1>
+                <div class="languages-spoken">
+                    <div class="languages-items item-edge1">
+                        <h2 class="language_h">Frontend</h2>
+                        <p class="pp ppp">I am drawn to the elegance that lies in simplicity.</p>
+                        <p class="language_p">Languages I speak:</p>
+                        <p class="pp">JavaScript, HTML, CSS</p>
+                    </div>
+                    <div class="languages-items item-edge2">
+                        <h2 class="language_h">Backend</h2>
+                        <p class="pp ppp">It is not just about the correctness of a solution, but its performance as well.</p>
+                        <p class="language_p">Languages I speak:</p>
+                        <p class="pp">Python, JavaScript, C</p>
+                        <p class="language_p">Dev Tools:</p>
+                        <p class="pp">Django, Flask, MySQL, MongoDB, Redis</p>
+                    </div>
+                    <div class="languages-items item-edge3">
+                        <h2 class="language_h">GIS Tools</h2>
+                        <p class="language_p">Frameworks:</p>
+                        <p class="pp">Esri's ArcGIS Suite, QGIS, Google Earth Engine, Open Street Maps</p>
+                    </div> 
+                </div>
+            </div>
+            <h1 class="testimonial_h">Testimonials</h1>
+            <p class="my_p">People I have worked with have said some nice things about me</p>
+            <div class="testimony">
+                <div class="testimonial_container">
+                    <img class="testimonial_image" src="{% static 'myPortfolio/images/Quinto.jpg' %}">
+                </div>
+                <div class="testimonial_p">
+                    <p class="comments">"His hard work and teamwork made him really helpful and easy to approach."</p>
+                    <p class="name"><b>Quinto Juma</b></p>
+                    <p class="title">Geospatial Consultant, ICIPE</p>
+                </div>
+            </div>
+            <div class="testimony">
+                <div class="testimonial_container">
+                    <img class="testimonial_image" src="{% static 'myPortfolio/images/Sydney.jpg' %}">
+                </div>
+                <div class="testimonial_p">
+                    <p class="comments">"During his stay with us, we found Mr. Nyakwaka to have a very keen sense of duty, very
+                        willing and able to learn quickly on ArcGIS products and got on well with others within the
+                        working environment."</p>
+                    <p class="name"><b>Sidney Simiyu</b></p>
+                    <p class="title">Solutions Engineer, Esri Eastern Africa</p>
+                </div>
+            </div>
+            <div class="testimony">
+                <div class="testimonial_container">
+                    <img class="testimonial_image" src="{% static 'myPortfolio/images/Joanne.jpg' %}">
+                </div>
+                <div class="testimonial_p">
+                    <p class="comments">"Philip possesses a remarkable ability to analyze complex problems and devise effective solutions. His technical skills are exemplary."</p>
+                    <p class="name"><b>Joan Waithira</b></p>
+                    <p class="title">Land surveyor, Measurements Systems</p>
+                </div>
+            </div>
+            <div class="buttons">
+                <div id="prevBtn" class="button"><img class="arrow" src="{% static 'myPortfolio/images/left-arrow.png' %}" alt=""></div>
+                <div id="nextBtn" class="button"><img class="arrow" src="{% static 'myPortfolio/images/right-arrow.png' %}" alt=""></div>
+            </div>
+        <footer class="footer">
+            <h1>Let Us Connect</h1>
+            <div class="contact-info">
+                <a href="https://twitter.com/ominaphillip18" target="_blank"><i class="fab fa-twitter f-t"></i></a>
+                <a href="https://www.linkedin.com/in/philip-nyakwaka-30881b213/" target="_blank"><i class="fab fa-linkedin f-l"></i></a>
+                <a href="https://github.com/philipnyakwaka1" target="_blank"><i class="fab fa-github f-g"></i></a>
+            </div>
+        </footer>
+        </div>
+        <script src="{% static 'myPortfolio/js/main.js' %}"></script>
+    </body>
+</html>
